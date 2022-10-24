@@ -1,0 +1,55 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+body{
+    background-color: black;
+
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+#game{
+    width: auto;
+    height: 600px;
+    background-image: url('sertao.png');
+    border: 1px solid black;
+
+}
+
+#personagem{
+    width: 200px;
+    height: 500px;
+    position: relative;
+    top: 100px;
+}
+
+.animar{
+    animation: personagem 500ms infinite;
+    
+}
+
+@keyframes personagem{
+    0%{top: 100px;}
+    30%{top: -30px;}
+    70%{top: -30px;}
+    100%{top: 100px;}
+}
+
+#quadrado{
+    width: 300px;
+    height: 150px;
+    position: relative;
+    top: -50px;
+    left: 1200px;
+    animation: quadrado 2s infinite linear;
+}
+
+@keyframes quadrado{
+    0%{left: 1200px;}
+    100%{left: -40px;}
+}
